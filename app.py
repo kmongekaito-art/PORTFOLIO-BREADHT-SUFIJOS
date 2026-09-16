@@ -17,16 +17,16 @@ st.set_page_config(page_title="Market Breadth Analyzer", layout="wide")
 with st.sidebar:
     st.title("⚙️ Configuración")
     st.markdown("### Selección de Índice")
-    ticker = st.selectbox("Mercado a analizar:", ["^STOXX50E", "QQQ","SPY","XXSC.DE"], index=0)
+    ticker = st.selectbox("Mercado a analizar:", ["BKCH", "COPX","EWZ"], index=0)
     st.markdown("---")
     st.info("💡 *Los datos se cargan en caché. El primer cambio de ticker tardará unos segundos.*")
 
 # Diccionario de URLs de BlackRock según el ticker
 BLACKROCK_URLS = {
-    '^STOXX50E': 'https://www.blackrock.com/es/profesionales/productos/251929/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20251022',
-    'QQQ': 'https://www.blackrock.com/es/profesionales/productos/251896/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20251205',
-    'SPY': 'https://www.blackrock.com/es/profesionales/productos/253743/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20251205',
-    'XXSC.DE': 'https://www.blackrock.com/es/profesionales/productos/348766/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260907', # ⚠️ Nota: La fecha 2026 es futura, si falla, cámbiala a una fecha real reciente.
+    'BKCH': 'https://www.blackrock.com/es/profesionales/productos/328618/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260907',
+    'COPX': 'https://www.blackrock.com/es/profesionales/productos/331968/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260907',
+    'EWZ': 'https://www.blackrock.com/es/profesionales/productos/304304fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260907',
+    
 }
 
 # Diccionario de mapeo de país a sufijo de Yahoo Finance (Unificado y ampliado)
