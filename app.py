@@ -47,7 +47,18 @@ MAPEO_SUFIJOS = {
     'SUECIA': '.ST', 'SWEDEN': '.ST',
     'FINLANDIA': '.HE', 'FINLAND': '.HE',
     'GRECIA': '.AT', 'GREECE': '.AT',
-    'IRLANDA': '.IR', 'IRELAND': '.IR'
+    'IRLANDA': '.IR', 'IRELAND': '.IR',
+    'MEXICO': '.MX', 'MÉXICO': '.MX',
+    'CANADA': '.TO', 'CANADÁ': '.TO',
+    'AUSTRALIA': '.AX',
+    'POLONIA': '.WA', 'POLAND': '.WA',
+    'INDONESIA': '.JK',
+    'BRAZIL': '.SA', 'BRASIL': '.SA',
+    'JAPON': '.T', 'JAPÓN': '.T', 'JAPAN': '.T',
+    'SINGAPUR': '.SI', 'SINGAPORE': '.SI',
+    'ISRAEL': '.TA',
+    'FILIPINAS': '.PS', 'PHILIPPINES': '.PS',
+    'HONG KONG': '.HK'
 }
 
 def agregar_sufijo(ticker, pais):
