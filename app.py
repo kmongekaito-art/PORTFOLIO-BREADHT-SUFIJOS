@@ -25,7 +25,7 @@ with st.sidebar:
 BLACKROCK_URLS = {
     'BKCH': 'https://www.blackrock.com/es/profesionales/productos/328618/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260907',
     'COPX': 'https://www.blackrock.com/es/profesionales/productos/331968/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260907',
-    'EWZ': 'https://www.blackrock.com/es/profesionales/productos/304304fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260915',
+    'EWZ': 'https://www.blackrock.com/es/profesionales/productos/304304/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260907',
     
 }
 
