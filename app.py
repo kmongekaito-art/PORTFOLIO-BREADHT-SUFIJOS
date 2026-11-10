@@ -17,7 +17,7 @@ st.set_page_config(page_title="Market Breadth Analyzer", layout="wide")
 with st.sidebar:
     st.title("⚙️ Configuración")
     st.markdown("### Selección de Índice")
-    ticker = st.selectbox("Mercado a analizar:", ["BKCH", "COPX","EWZ"], index=0)
+    ticker = st.selectbox("Mercado a analizar:", ["BKCH", "COPX","EWZ","BTEC"], index=0)
     st.markdown("---")
     st.info("💡 *Los datos se cargan en caché. El primer cambio de ticker tardará unos segundos.*")
 
@@ -26,7 +26,7 @@ BLACKROCK_URLS = {
     'BKCH': 'https://www.blackrock.com/es/profesionales/productos/328618/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260907',
     'COPX': 'https://www.blackrock.com/es/profesionales/productos/331968/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260907',
     'EWZ': 'https://www.blackrock.com/es/profesionales/productos/304304/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260907',
-    
+    'BTEC': 'https://www.blackrock.com/es/profesionales/productos/291450/fund/1497267045693.ajax?tab=all&fileType=json&asOfDate=20260907',
 }
 
 # Diccionario de mapeo de país a sufijo de Yahoo Finance (Unificado y ampliado)
